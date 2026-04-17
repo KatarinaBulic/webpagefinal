@@ -1,113 +1,64 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f8f5f2;
-  color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EBE8E4;
 }
 
+/* HEADER */
 header {
-  background-color: #6b4f3b;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav {
-  background-color: #d9c5b2;
-  padding: 12px;
-  text-align: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
+/* HERO SECTION */
 .hero {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #ebe8e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
 }
 
-.hero h2 {
-  font-size: 32px;
+/* LEFT TEXT */
+.hero-text {
+    max-width: 500px;
 }
 
-.hero button {
-  padding: 10px 20px;
-  background-color: #6b4f3b;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+.hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.menu, .order, .contact {
-  padding: 40px 20px;
-  text-align: center;
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
-.menu-items {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
 }
 
-.card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 220px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.card span {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #6b4f3b;
+.btn-primary {
+    background-color: #000;
+    color: white;
 }
 
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: left;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
+.btn-secondary {
+    background-color: #fff;
+    border: 1px solid #000;
 }
 
-form label {
-  display: block;
-  margin-top: 10px;
-}
-
-form input,
-form select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-}
-
-form button {
-  margin-top: 15px;
-  width: 100%;
-  padding: 10px;
-  background-color: #6b4f3b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-footer {
-  background-color: #6b4f3b;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+/* RIGHT IMAGE */
+.hero-image img {
+    width: 450px;
 }
