@@ -4,14 +4,12 @@ body {
     background-color: #EBE8E4;
 }
 
-/* HEADER */
 header {
     padding: 20px 40px;
     font-size: 24px;
     font-weight: bold;
 }
 
-/* HERO SECTION */
 .hero {
     display: flex;
     align-items: center;
@@ -19,7 +17,6 @@ header {
     padding: 60px;
 }
 
-/* LEFT TEXT */
 .hero-text {
     max-width: 500px;
 }
@@ -34,7 +31,6 @@ header {
     margin-bottom: 30px;
 }
 
-/* BUTTONS */
 .buttons {
     display: flex;
     gap: 15px;
@@ -58,7 +54,6 @@ button {
     border: 1px solid #000;
 }
 
-/* RIGHT IMAGE */
 .hero-image img {
     width: 450px;
 }
