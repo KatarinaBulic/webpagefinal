@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0 60px;
+    font-family: Arial, sans-serif;
+    background-color: #EBE8E4;
+}
+
+header {
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.hero-image img {
+    width: 450px;
+}
+
+/* MENU */
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.item-left {
+    flex: 3;
+}
+
+.item-left h3 {
+    margin: 0;
+}
+
+.item-left p {
+    margin: 5px 0 0 0;
+}
+
+/* NEW: text + price in same line */
+.item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* controls space between name and price */
+}
+
+/* UPDATED: price closer to text */
+.item-price {
+    font-weight: bold;
+}
+
+.item-image {
+    width: 160px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.item-image img {
+    width: 120px;
+    border-radius: 10px;
+}
