@@ -37,39 +37,55 @@ header {
     gap: 15px;
 }
 
-button {
+button,
+.btn-primary,
+.btn-secondary {
     padding: 12px 25px;
-    border: none;
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button {
+    border: none;
 }
 
 .btn-primary {
     background-color: #000;
     color: white;
+    border: none;
 }
 
 .btn-secondary {
     background-color: #fff;
+    color: #000;
     border: 1px solid #000;
+}
+
+.back-btn {
+    margin: 20px 0;
 }
 
 .hero-image img {
     width: 450px;
 }
-<<<<<<< HEAD
 
+.menu {
+    padding: 20px 0;
+}
 
 .menu-item {
     display: flex;
     align-items: center;
-    gap: 25px;
+    justify-content: space-between;
     margin-bottom: 35px;
 }
 
 .item-left {
-    flex: 3;
+    flex: 1;
 }
 
 .item-left h3 {
@@ -83,7 +99,7 @@ button {
 .item-header {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .item-price {
@@ -91,8 +107,7 @@ button {
 }
 
 .item-image {
-    width: 160px;
-    text-align: right;
+    margin-left: 40px;
     margin-right: 20px;
 }
 
@@ -100,5 +115,3 @@ button {
     width: 120px;
     border-radius: 10px;
 }
-=======
->>>>>>> f9277f72f79e9810fe80e69afcaceec9a865accc
