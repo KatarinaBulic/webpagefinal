@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - BiteHaven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>BiteHaven Order</h1>
+</header>
+
+<a href="index.html" class="btn-primary back-btn">Back Home</a>
+
+<section class="order-menu">
+
+    <h2>Appetizers</h2>
+    <div class="food-grid">
+        <div class="food-card" onclick="addToCart('Quesadilla', 9.99)">
+            <img src="1.jpg" alt="Quesadilla">
+            <h3>Quesadilla</h3>
+        </div>
+
+        <div class="food-card" onclick="addToCart('Chicken Wings', 11.99)">
+            <img src="2.jpg" alt="Chicken Wings">
+            <h3>Chicken Wings</h3>
+        </div>
+
+        <div class="food-card" onclick="addToCart('Mozzarella Sticks', 8.99)">
+            <img src="3.jpg" alt="Mozzarella Sticks">
+            <h3>Mozzarella Sticks</h3>
+        </div>
+    </div>
+
+    <h2>Soups & Salads</h2>
+    <div class="food-grid">
+        <div class="food-card" onclick="addToCart('French Onion Soup', 6.99)">
+            <img src="6.jpg" alt="French Onion Soup">
+            <h3>French Onion Soup</h3>
+        </div>
+
+        <div class="food-card" onclick="addToCart('Caesar Salad', 8.99)">
+            <img src="7.jpg" alt="Caesar Salad">
+            <h3>Caesar Salad</h3>
+        </div>
+
+        <div class="food-card" onclick="addToCart('Greek Salad', 9.49)">
+            <img src="12.jpg" alt="Greek Salad">
+            <h3>Greek Salad</h3>
+        </div>
+    </div>
+
+    <h2>Burgers</h2>
+    <div class="food-grid">
+        <div class="food-card" onclick="addToCart('Cheeseburger', 10.99)">
+            <img src="8.jpeg" alt="Cheeseburger">
+            <h3>Cheeseburger</h3>
+        </div>
+
+        <div class="food-card" onclick="addToCart('Barbecue Burger', 11.99)">
+            <img src="9.jpg" alt="Barbecue Burger">
+            <h3>Barbecue Burger</h3>
+        </div>
+
+        <div class="food-card" onclick="addToCart('Mushroom Swiss Burger', 12.49)">
+            <img src="13.jpg" alt="Mushroom Swiss Burger">
+            <h3>Mushroom Swiss Burger</h3>
+        </div>
+    </div>
+
+</section>
+
+<section class="cart-box">
+    <h2>Order Summary</h2>
+
+    <div id="cartItems"></div>
+
+    <p>Subtotal: <span id="subtotal">$0.00</span></p>
+    <p>Tax: <span id="tax">$0.00</span></p>
+    <p><strong>Total: <span id="total">$0.00</span></strong></p>
+
+    <button onclick="clearCart()" class="btn-secondary">Clear Order</button>
+
+    <div class="order-form-section">
+        <h3>Customer Information</h3>
+
+        <form id="orderForm" class="order-form">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <button type="submit" class="btn-primary">Place Order</button>
+        </form>
+
+        <p id="confirmationMessage"></p>
+    </div>
+</section>
+
+<script src="java.js"></script>
+
+</body>
+</html>
